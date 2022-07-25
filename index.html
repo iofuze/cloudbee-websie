@@ -67,8 +67,9 @@
             class="text-gray-800 dark:text-white hover:bg-gray-50 focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 mr-2 dark:hover:bg-gray-700 focus:outline-none dark:focus:ring-gray-800">Log
             in</a>
           <a href="#"
-            class="text-white bg-violet-700 hover:bg-violet-800 focus:ring-4 focus:ring-violet-300 font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 mr-2 dark:bg-violet-600 dark:hover:bg-violet-700 focus:outline-none dark:focus:ring-violet-800">Get
-            started</a>
+            class="text-white bg-violet-700 hover:bg-violet-800 focus:ring-4 focus:ring-violet-300 font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 mr-2 dark:bg-violet-600 dark:hover:bg-violet-700 focus:outline-none dark:focus:ring-violet-800">
+            Contact us
+          </a>
           <button data-collapse-toggle="mobile-menu-2" type="button"
             class="inline-flex items-center p-2 ml-1 text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
             aria-controls="mobile-menu-2" aria-expanded="false">
@@ -119,9 +120,18 @@
   </header>
   <style>
     ul.questions li::before {
-      content: "❓ ";
-      font-weight: bold;
+      content: "🗯 ";
 
+    }
+
+    .Hightlight {
+      position: relative;
+      display: inline-block;
+      padding-bottom: .35em;
+      background-image: url("/underline.svg");
+      background-position: 50% 100%;
+      background-size: contain;
+      background-repeat: no-repeat;
     }
   </style>
   <section id="tophero" class="bg-white dark:bg-gray-900">
@@ -129,13 +139,15 @@
       <div class="mr-auto place-self-center lg:col-span-7">
         <h1
           class="max-w-2xl mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl dark:text-white">
-          Only competitor <span class='text-violet-700'>intel that matters</span>, on time</h1>
-        <p class="max-w-2xl mb-6 font-light text-gray-500 lg:mb-8 md:text-2xl lg:text-4xl dark:text-gray-400">
+          Only competitor <span class='Hightlight'>intel that matters</span>, on time</h1>
+        <p class="max-w-2xl mb-6 font-light text-gray-500 lg:mb-8 text-2xl lg:text-4xl dark:text-gray-400">
         <ul class="list-none questions">
           <li>Have you been blindsided by customer questions?</li>
           <li>Did your competitors' strategy take you by surprise?</li>
         </ul>
+        <br>
         With SWOTbee , you can handle all competitor related queries with clarity and confidence.</p>
+        <br>
         <a href="#"
           class="inline-flex items-center justify-center px-5 py-3 mr-3 text-base font-medium text-center text-white rounded-lg bg-violet-700 hover:bg-violet-800 focus:ring-4 focus:ring-violet-300 dark:focus:ring-violet-900">
           Get started
@@ -145,13 +157,36 @@
               clip-rule="evenodd"></path>
           </svg>
         </a>
-        <a href="#"
-          class="inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center text-gray-900 border border-gray-300 rounded-lg hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 dark:text-white dark:border-gray-700 dark:hover:bg-gray-700 dark:focus:ring-gray-800">
-          Speak to Sales
-        </a>
       </div>
-      <div class="hidden lg:mt-0 lg:col-span-5 lg:flex">
+      <!--      <div class="hidden lg:mt-0 lg:col-span-5 lg:flex">
         <img src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/hero/phone-mockup.png" alt="mockup">
+      </div>-->
+      <div class="hidden lg:mt-0 lg:col-span-5 lg:flex">
+        <style>
+          svg#freepik_stories-competitive-intelligence:not(.animated) .animable {
+            opacity: 0;
+          }
+
+          svg#freepik_stories-competitive-intelligence.animated #freepik--magnifying-glass--inject-16 {
+            animation: 1s 1 forwards cubic-bezier(.36, -0.01, .5, 1.38) zoomOut;
+            animation-delay: 0s;
+          }
+
+          @keyframes zoomOut {
+            0% {
+              opacity: 0;
+              transform: scale(1.5);
+            }
+
+            100% {
+              opacity: 1;
+              transform: scale(1);
+            }
+          }
+        </style>
+        <img src="/hero_image.svg" alt="mockup">
+
+
       </div>
     </div>
   </section>
