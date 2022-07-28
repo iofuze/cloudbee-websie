@@ -2,7 +2,25 @@
 
 <head>
   <meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="57x57" href="/img/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="/img/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/img/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/img/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/img/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/img/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/img/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/img/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/img/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="/img/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="/img/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/img/favicon-16x16.png">
+<link rel="manifest" href="/img/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 
   <style>
     ul.questions li::before {
@@ -13,11 +31,13 @@
     .Hightlight {
       position: relative;
       display: inline-block;
-      padding-bottom: .35em;
-      background-image: url("/underline-secondary.svg");
+      padding: .4em;
+      background-image: url("/highlight_circle.svg");
       background-position: 50% 100%;
       background-size: contain;
       background-repeat: no-repeat;
+      background-origin:padding-box;
+
     }
     svg#freepik_stories-competitive-intelligence:not(.animated) .animable {
       opacity: 0;
@@ -52,39 +72,39 @@
         extend: {
           colors: {
             prima: { "50": "#eff6ff", "100": "#dbeafe", "200": "#bfdbfe", "300": "#93c5fd", "400": "#60a5fa", "500": "#3b82f6", "600": "#2563eb", "700": "#1d4ed8", "800": "#1e40af", "900": "#1e3a8a" },
-            secondary: {  DEFAULT: '#FF2768',
-  '50': '#FFFFFF',
-  '100': '#FFF3F7',
-  '200': '#FFCADA',
-  '300': '#FFA1BE',
-  '400': '#FF79A1',
-  '500': '#FF5085',
-  '600': '#FF2768',
-  '700': '#EE0048',
-  '800': '#B60037',
-  '900': '#7E0026'},
-  primary:  {    DEFAULT: '#05E0E9',
-  '50': '#D0FCFE',
-  '100': '#BCFBFE',
-  '200': '#94F9FD',
-  '300': '#6DF6FC',
-  '400': '#45F4FB',
-  '500': '#1DF1FA',
-  '600': '#05E0E9',
-  '700': '#04ABB2',
-  '800': '#03767B',
-  '900': '#014244'},
-  back: {  DEFAULT: '#F0F6F0',
+            secondary: {    DEFAULT: '#FFD802',
   '50': '#FFFFFF',
   '100': '#FFFFFF',
-  '200': '#F0F6F0',
-  '300': '#D7E6D8',
-  '400': '#B4D1B6',
-  '500': '#91BC94',
-  '600': '#6EA672',
-  '700': '#548957',
-  '800': '#3F6641',
-  '900': '#29432B'},
+  '200': '#FFFEF7',
+  '300': '#FFF7CE',
+  '400': '#FFF1A5',
+  '500': '#FFEB7C',
+  '600': '#FFE554',
+  '700': '#FFDE2B',
+  '800': '#FFD802',
+  '900': '#C9AA00'},
+  primary:  {   DEFAULT: '#024D8C',
+  '50': '#9AD0FE',
+  '100': '#86C7FD',
+  '200': '#5DB4FD',
+  '300': '#35A1FC',
+  '400': '#0D8FFC',
+  '500': '#0379DC',
+  '600': '#0363B4',
+  '700': '#024D8C',
+  '800': '#012F55',
+  '900': '#00101D'},
+  back: {  DEFAULT: '#FEF6F7',
+  '50': '#FEE9EA',
+  '100': '#FCD6D8',
+  '200': '#FAB0B4',
+  '300': '#F78A8F',
+  '400': '#F3555D',
+  '500': '#F0212A',
+  '600': '#CB0E17',
+  '700': '#960A11',
+  '800': '#62070B',
+  '900': '#2D0305'},
 
           },
         },
@@ -129,18 +149,18 @@
   </script>
 </head>
 
-<body>
+<body >
   <header>
     <nav class="bg-back border-gray-200 px-4 lg:px-6 py-2.5 dark:bg-gray-800">
       <div class="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl">
         <a href="#" class="flex items-center">
-          <img src="Swotbee_logo-red-cyan.svg" class="mr-3 h-6 sm:h-9" alt="Swotbee Logo" />
+          <img src="swotbee.png" class="mr-3 h-6 sm:h-9" alt="Swotbee Logo" />
           <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white">SWOTbee</span>
         </a>
         <div class="flex items-center lg:order-2">
 
           <a href="#"
-            class="text-white bg-secondary-700 hover:bg-secondary-800 focus:ring-4 focus:ring-seconary-300 font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 mr-2 dark:bg-secondary-600 dark:hover:bg-secondary-700 focus:outline-none dark:focus:ring-secondary-800">
+            class="text-primary-800 bg-secondary-700 hover:bg-secondary-800 focus:ring-4 focus:ring-seconary-300 font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 mr-2 dark:bg-secondary-600 dark:hover:bg-secondary-700 focus:outline-none dark:focus:ring-secondary-800">
             Contact us
           </a>
           <button data-collapse-toggle="mobile-menu-2" type="button"
@@ -196,7 +216,7 @@
       <div class="mr-auto place-self-center lg:col-span-7">
         <h1
           class="max-w-2xl mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl dark:text-white text-primary-700">
-          Only competitor <span class='Hightlight'>intel that matters</span>, on time</h1>
+          Only competitor <span class='Hightlight border-7 border-indigo-500'>intel that matters</span>, without spam</h1>
         <p class="max-w-2xl mb-6 font-light text-gray-500 lg:mb-8 text-2xl lg:text-4xl dark:text-gray-400">
         <ul class="list-none questions">
           <li>Have you been blindsided by customer questions?</li>
@@ -207,7 +227,7 @@
 
         <br>
         <a href="#"
-          class="inline-flex items-center justify-center px-5 py-3 mr-3 text-base font-medium text-center text-white rounded-lg bg-secondary-700 hover:bg-secondary-800 focus:ring-4 focus:ring-secondary-300 dark:focus:ring-secondary-900">
+          class="inline-flex items-center justify-center px-5 py-3 mr-3 text-base font-medium text-center text-primary-800 rounded-lg bg-secondary-700 hover:bg-secondary-800 focus:ring-4 focus:ring-secondary-300 dark:focus:ring-secondary-900">
           Get started
           <svg class="w-5 h-5 ml-2 -mr-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
             <path fill-rule="evenodd"
@@ -219,7 +239,7 @@
 
       <div class="hidden lg:mt-0 lg:col-span-5 lg:flex">
 
-        <img src="/thinkingOfWork-red-cyan.svg" alt="mockup">
+        <img src="/thinkingOfWork_yellow.svg" alt="mockup">
 
 
       </div>
@@ -348,7 +368,7 @@
           Face any prospect with confidence, secure in your knowledge of the market and competitors.</p>
         <div class="flex flex-col space-y-4 sm:flex-row sm:space-y-0 sm:space-x-4">
           <a href="#"
-            class="inline-flex items-center justify-center px-4 py-2.5 text-base font-medium text-center text-white bg-secondary-700 rounded-lg hover:bg-secondary-800 focus:ring-4 focus:ring-secondary-300 dark:focus:ring-secondary-900">
+            class="inline-flex items-center justify-center px-4 py-2.5 text-base font-medium text-center text-primary-800 bg-secondary-700 rounded-lg hover:bg-secondary-800 focus:ring-4 focus:ring-secondary-300 dark:focus:ring-secondary-900">
             Get started
           </a>
 
@@ -359,7 +379,7 @@
   <footer class="p-4 bg-back md:p-8 lg:p-10 dark:bg-gray-800">
     <div class="mx-auto max-w-screen-xl text-center">
       <a href="#" class="flex justify-center items-center text-2xl font-semibold text-gray-900 dark:text-white">
-        <img src="Swotbee_logo-red-cyan.svg" class="mr-3 h-6 sm:h-9" alt="Flowbite Logo" />
+        <img src="swotbee.png" class="mr-3 h-6 sm:h-9" alt="Swotbee Logo" />
 
         SWOTbee
       </a>
